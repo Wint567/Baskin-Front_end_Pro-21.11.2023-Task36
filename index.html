@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task37</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .searchBtn {
+        margin-bottom: 35px;
+    }
+
+    .posts button {
+        margin-bottom: 35px;
+    }
+
+    input {
+        width: 45%;
+        height: 5%;
+    }
+
+    button {
+        width: 35%;
+        border-radius: 15px;
+        margin-top: 10px;
+        color: white;
+        background-color: red;
+        padding: 15px;
+    }
+
+    .comments div:not(:last-child) {
+        margin-bottom: 25px;
+    }
+</style>
+<body>
+    <div class="container">
+        <input class="inputId" type="number" placeholder="Enter the post`s id">
+        <button class="searchBtn">Search</button>
+    </div>
+    <div class="posts"></div>
+    <div class="comments"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
